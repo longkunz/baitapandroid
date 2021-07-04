@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ThayDoiHinh">
+
+    <RadioGroup
+        android:id="@+id/rdoChoose"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rdoPig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pig" />
+
+        <RadioButton
+            android:id="@+id/rdoCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cat" />
+
+        <RadioButton
+            android:id="@+id/rdoDog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dog" />
+
+        <RadioButton
+            android:id="@+id/rdoRabbit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rabbit" />
+
+        <RadioButton
+            android:id="@+id/rdoTdc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TDC" />
+
+    </RadioGroup>
+    <ImageView
+        android:id="@+id/imgResult"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="50sp"
+        android:src="@drawable/pig"
+        android:layout_width="300px"
+        android:layout_height="350px"/>
+
+</LinearLayout>

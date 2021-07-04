@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25px"
+    android:layout_marginRight="25px"
+    android:orientation="vertical"
+    tools:context=".ThayDoiFontChu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="Format"
+        android:textSize="70px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chkboxBg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BackGround" />
+
+        <CheckBox
+            android:id="@+id/chkboxTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="Text Color" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="Text Alignment"
+        android:textSize="70px" />
+
+    <RadioGroup
+        android:id="@+id/rdoTextAlign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdoLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Left" />
+
+        <RadioButton
+            android:id="@+id/rdoCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:text="Center" />
+
+        <RadioButton
+            android:id="@+id/rdoRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:text="Right" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@android:color/darker_gray"
+        android:text="SHOW RESULT" />
+    <TextView
+        android:textSize="50px"
+        android:id="@+id/result"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
